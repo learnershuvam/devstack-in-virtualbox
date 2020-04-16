@@ -1,7 +1,7 @@
 # Setup DevStack in VirtualBox
 Pre build Devstack installation using an ova file.
-Download Virtualbox Version 6.0.18 and above: https://www.virtualbox.org/wiki/Downloads
-A Pre-installed Openstack ubuntu 18 LTS x64 image that can be directly imported onto VirtualBox. You can literally setup and test Openstack in under 10 minutes. There's no need to install Openstack using this VirtualBox (.vbox/.vdi) image.
+Download Virtualbox Version 6.0.x and above: https://www.virtualbox.org/wiki/Downloads
+A Pre-installed Openstack ubuntu 18 LTS x64 image that can be directly imported onto VirtualBox. You can literally setup and test Openstack in under 10 minutes. There's no need to install Openstack using ubuntu image. This VirtualBox (.ova) image does all that is needed.
 
 
 ## Preface:
@@ -23,7 +23,7 @@ This method uses a pre-installed packstack Openstack binary. These binaries are 
 Note: You can always increase the RAM, Hard Disk space and the CPU Cores based on your Openstack requirements. Higher configuration is required for running Virtual instances within Openstack smoothly.
 
 ---
-**Download the Devstack-Ubuntu compressed VirtualBox Image from:** https://drive.google.com/drive/folders/1fCNTFlJGWGm_-d2vyUP9DZGqyQ7QILOP?usp=sharing
+**Download the Devstack-Ubuntu compressed VirtualBox OVA Image from:** https://drive.google.com/drive/folders/1fCNTFlJGWGm_-d2vyUP9DZGqyQ7QILOP?usp=sharing
 ---
 
 ## Installation Instructions:
@@ -31,10 +31,10 @@ Note: You can always increase the RAM, Hard Disk space and the CPU Cores based o
 1. Download and Extract the zip file onto "VirtualBox VMs" folder located under your C:/Users/<username> folder in your PC.
 
 2. Open VirtualBox application and import the contents of the zip file (Using File -> Import Appliance). You should see a Appliance to import, put the path of the ova file from step 1.
-![alt tag](https://github.com/shuvamkumarsk1/devstack-in-virtualbox/blob/master/Step%201%20Import.png)
+        ![alt tag](https://github.com/shuvamkumarsk1/devstack-in-virtualbox/blob/master/Step%201%20Import.png)
 
 3. Click on Next and Import. Hurray you did all necessary steps, just check your vm settings.
-![alt tag](https://github.com/shuvamkumarsk1/devstack-in-virtualbox/blob/master/Step%202%20Import.png)
+        ![alt tag](https://github.com/shuvamkumarsk1/devstack-in-virtualbox/blob/master/Step%202%20Import.png)
 
 4. Quit all other applications running in your laptop/PC. Only then run this VM. The preset settings require you have a quad core x64 PC along with 6GB ram at least. Trust me, this isn't enough for Openstack still.
 
@@ -48,19 +48,19 @@ a. Under Settings -> USB (turn off USB controller) if it shows up as invalid set
 
 b. Under devstack-ubuntu -> Settings -> Network, Check if the NAT Adapter is enabled. Ensure that your PC/Laptop running the VirtualBox application has internet connectivity.
 
-![alt tag](https://github.com/shuvamkumarsk1/devstack-in-virtualbox/blob/master/Adapter%201.png)
+   ![alt tag](https://github.com/shuvamkumarsk1/devstack-in-virtualbox/blob/master/Adapter%201.png)
 
 
 c.Under devstack-ubuntu -> Settings -> Network -> Adapter 1 (NAT), Click the "Port Forwarding" button and check if the following Port Forwarding options are in-place, else configure them.
 
-![alt tag](https://github.com/shuvamkumarsk1/devstack-in-virtualbox/blob/master/Port%20Forwarding.png)
-![alt tag](https://github.com/shuvamkumarsk1/devstack-in-virtualbox/blob/master/Adapter%202.png)
+   ![alt tag](https://github.com/shuvamkumarsk1/devstack-in-virtualbox/blob/master/Port%20Forwarding.png)
+   ![alt tag](https://github.com/shuvamkumarsk1/devstack-in-virtualbox/blob/master/Adapter%202.png)
 
 d. Under devstack-ubuntu -> Settings -> Network -> Enable Adapter 2 -> Adapter 2 (Host-Only Adapter)
 
 e. Check the Configuration page of your devstack-ubuntu VM. It should more-or-less be having the following settings:
 
-![alt tag](https://github.com/shuvamkumarsk1/devstack-in-virtualbox/blob/master/Configuration.png)
+   ![alt tag](https://github.com/shuvamkumarsk1/devstack-in-virtualbox/blob/master/Configuration.png)
 
 
 Now start the VM. Let it load. Use the following PC credentials:
