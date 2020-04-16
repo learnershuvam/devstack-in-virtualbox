@@ -8,7 +8,7 @@ A Pre-installed Openstack ubuntu 18 LTS x64 image that can be directly imported 
 
 I have spent hours setting up every solution out there to test Openstack. None of them are actually easy considering the heavy PC requirements and the time taken to build the Openstack modules from scratch. This solution would absolutely remove the hassle of installing Openstack, before being able to test it out. This solution does not require you to install any other application other than VirtualBox on your PC/Laptop. Openstack uses a lot of CPU and Memory resources. Please ensure that all  your other applications have been saved/closed before running this VM.
 
-This method uses a pre-installed packstack Openstack binary. These binaries are installed on an IP address: 10.0.2.15, which is the default NAT IP that VirtualBox assigns a new machine using a NAT Adapter.
+This method uses a pre-installed Openstack binary. These binaries are installed on an IP address: 10.0.2.15, which is the default NAT IP that VirtualBox assigns a new machine using a NAT Adapter.
 
 
 ## Minimum Requirements:
@@ -62,12 +62,15 @@ e. Check the Configuration page of your devstack-ubuntu VM. It should more-or-le
 
    ![alt tag](https://github.com/shuvamkumarsk1/devstack-in-virtualbox/blob/master/Configuration.png)
 
-
 Now start the VM. Let it load. Use the following PC credentials:
 
 **username: openstack**
 
 **password: openstack**
+
+My Adapter 1 ip - **10.0.2.15**
+My Adapter 2 ip - **192.168.56.114** This May change depending on Your DHCP present in Files -> Host-Manager.
+Change the dashboard accordingly.
 
 This may not work properly if you get any other IP than 10.0.2.15. From your PC/Laptop's browser you should access the following website: **http://192.168.56.114/dashboard**
 
