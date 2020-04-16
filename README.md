@@ -23,7 +23,7 @@ This method uses a pre-installed packstack Openstack binary. These binaries are 
 Note: You can always increase the RAM, Hard Disk space and the CPU Cores based on your Openstack requirements. Higher configuration is required for running Virtual instances within Openstack smoothly.
 
 ---
-**Download the Devstack-Ubuntu compressed VirtualBox Image from:** https://drive.google.com/
+**Download the Devstack-Ubuntu compressed VirtualBox Image from:** https://drive.google.com/drive/folders/1fCNTFlJGWGm_-d2vyUP9DZGqyQ7QILOP?usp=sharing
 ---
 
 ## Installation Instructions:
